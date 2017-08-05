@@ -6,10 +6,10 @@
         <groupId>pl.thewalkingcode</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>recruiter-dao</artifactId>
+    <artifactId>recruiter-data</artifactId>
     <packaging>jar</packaging>
 
-    <name>recruiter-dao</name>
+    <name>recruiter-data</name>
 
     <dependencies>
         <!-- DATA -->

@@ -10,7 +10,7 @@
     <name>recruiter</name>
 
     <modules>
-        <module>recruiter-dao</module>
+        <module>recruiter-data</module>
         <module>recruiter-war</module>
     </modules>
 
@@ -29,7 +29,7 @@
             <!-- APP -->
             <dependency>
                 <groupId>pl.thewalkingcode</groupId>
-                <artifactId>recruiter-dao</artifactId>
+                <artifactId>recruiter-data</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <!-- DATA -->

@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>pl.thewalkingcode</groupId>
-            <artifactId>recruiter-dao</artifactId>
+            <artifactId>recruiter-data</artifactId>
         </dependency>
     </dependencies>
 
