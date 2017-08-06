@@ -11,7 +11,8 @@
 
     <modules>
         <module>recruiter-data</module>
-        <module>recruiter-war</module>
+        <module>recruiter-service</module>
+        <module>recruiter-web</module>
     </modules>
 
     <properties>
@@ -20,6 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-data-jpa.version>1.11.6.RELEASE</spring-data-jpa.version>
         <hibernate-core.version>5.1.0.Final</hibernate-core.version>
+        <apache-shiro.version>1.4.0</apache-shiro.version>
         <javaee-api.version>7.0</javaee-api.version>
         <junit.version>4.12</junit.version>
     </properties>
@@ -30,6 +32,16 @@
             <dependency>
                 <groupId>pl.thewalkingcode</groupId>
                 <artifactId>recruiter-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>pl.thewalkingcode</groupId>
+                <artifactId>recruiter-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>pl.thewalkingcode</groupId>
+                <artifactId>recruiter-web</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <!-- DATA -->
@@ -43,6 +55,12 @@
                 <artifactId>hibernate-core</artifactId>
                 <version>${hibernate-core.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            <!-- SECURITY -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-all</artifactId>
+                <version>${apache-shiro.version}</version>
             </dependency>
             <!-- PROVIDED -->
             <dependency>

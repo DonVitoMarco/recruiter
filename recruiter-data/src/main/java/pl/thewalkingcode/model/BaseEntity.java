@@ -1,5 +1,6 @@
 package pl.thewalkingcode.model;
 
+import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
@@ -25,6 +26,8 @@ class BaseEntity implements Serializable {
             }
     )
     private Long id;
+
+    @Column
     private String uuid = UUID.randomUUID().toString();
 
     @Override

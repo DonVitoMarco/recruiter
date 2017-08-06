@@ -6,15 +6,36 @@
         <groupId>pl.thewalkingcode</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>recruiter-war</artifactId>
+    <artifactId>recruiter-web</artifactId>
     <packaging>war</packaging>
 
-    <name>recruiter-war</name>
+    <name>recruiter-web</name>
 
     <dependencies>
         <dependency>
             <groupId>pl.thewalkingcode</groupId>
             <artifactId>recruiter-data</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>pl.thewalkingcode</groupId>
+            <artifactId>recruiter-service</artifactId>
+        </dependency>
+        <!-- SECURITY -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-all</artifactId>
+        </dependency>
+        <!-- PROVIDED -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- TEST -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -25,7 +46,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <failOnMissingWebXml>true</failOnMissingWebXml>
                 </configuration>
             </plugin>
         </plugins>
