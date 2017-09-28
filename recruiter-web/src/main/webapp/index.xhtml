@@ -6,11 +6,8 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
-<f:view>
-    <h:outputLabel value="Start Page"/>
-    <h:form>
-        <h:commandLink action="#{navigationBean.goToPage('app')}" value="APP"/>
-    </h:form>
-</f:view>
+    <ui:composition template="/templates/commonLayouts.xhtml">
+
+    </ui:composition>
 
 </html>
