@@ -18,6 +18,10 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>pl.thewalkingcode</groupId>
+            <artifactId>recruiter-data</artifactId>
+        </dependency>
         <!-- PROVIDED -->
         <dependency>
             <groupId>javax</groupId>
