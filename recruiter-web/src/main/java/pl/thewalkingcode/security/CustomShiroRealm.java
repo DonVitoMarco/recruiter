@@ -37,6 +37,7 @@ public class CustomShiroRealm extends AuthorizingRealm {
         }
     }
 
+    //TODO roles for user
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         if (principalCollection == null) {
@@ -47,6 +48,7 @@ public class CustomShiroRealm extends AuthorizingRealm {
         return new SimpleAuthorizationInfo(roleNames);
     }
 
+    //TODO salt password
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         UsernamePasswordToken upToken = (UsernamePasswordToken) authenticationToken;
