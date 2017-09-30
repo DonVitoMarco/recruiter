@@ -3,26 +3,25 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-<h:head>
-    <title>LOGIN</title>
-</h:head>
-<h:body>
 
-    <h:outputText value="LOGIN"/>
-    <h:form id="login">
-        <h:panelGrid columns="2">
-            <h:outputLabel for="username" value="Username: "/>
-            <h:inputText id="username" required="true"/>
+<ui:composition template="/templates/commonLayouts.xhtml">
+    <ui:define name="content">
+        <h:outputText value="LOGIN"/>
+        <h:form id="login">
+            <h:panelGrid columns="2">
+                <h:outputLabel for="username" value="Username: "/>
+                <h:inputText id="username" required="true"/>
 
-            <h:outputLabel for="password" value="Password: "/>
-            <h:inputSecret id="password" required="true"/>
+                <h:outputLabel for="password" value="Password: "/>
+                <h:inputSecret id="password" required="true"/>
 
-            <h:outputLabel for="rememberMe" value="Remember Me: "/>
-            <h:selectBooleanCheckbox id="rememberMe"/>
+                <h:outputLabel for="rememberMe" value="Remember Me: "/>
+                <h:selectBooleanCheckbox id="rememberMe"/>
 
-            <h:commandButton value="Login"/>
-        </h:panelGrid>
-    </h:form>
+                <h:commandButton value="Login"/>
+            </h:panelGrid>
+        </h:form>
+    </ui:define>
+</ui:composition>
 
-</h:body>
 </html>
